@@ -1,0 +1,37 @@
+.site-drawer-render-in-current-wrapper {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  background: #fafafa;
+  border: 1px solid #ebedf0;
+  border-radius: 2px;
+}
+.education-drawer {
+  .ant-drawer-content-wrapper {
+    position: relative;
+    .ant-drawer-content {
+      width: calc(100vw - 250px);
+      position: absolute;
+      left: 250px;
+      top: 125px;
+      z-index: 1000;
+      .ant-drawer-wrapper-body .ant-drawer-body {
+        overflow-y: auto;
+      }
+    }
+  }
+}
+.education-btn.active {
+}
+
+@media only screen and (max-width: 992px) {
+  .education-drawer .ant-drawer-content-wrapper {
+    position: absolute;
+    .ant-drawer-content {
+      width: 100vw;
+      left: unset;
+      right: 0;
+    }
+  }
+}

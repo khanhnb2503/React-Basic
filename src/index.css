@@ -1,0 +1,128 @@
+.loading.cover-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.loading.cover-page {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading .ant-spin {
+  color: #3e79f7;
+}
+.block-area {
+  display: inherit;
+  border-bottom: 1px solid rgb(62, 121, 247);
+}
+.block-item {
+  line-height: 15px;
+  height: 32px;
+  background: #e9e9e9;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 25px;
+  position: relative;
+  padding: 9px 30px;
+  border-radius: 18px;
+}
+.block-item span {
+    position: absolute;
+    top: -8px;
+    background: red;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    right: -5px;
+}
+.block-item svg {
+  color: white;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  font-size: 12px;
+}
+.block-input input {
+  display: inline-block;
+  width: 33%;
+  min-height: 36px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  outline: none;
+  font-size: 0.9rem;
+  border: unset;
+}
+.block-input {
+  padding-top: 6px;
+}
+.btn-right-submitEmail {
+  text-align: right;
+  padding-top: 15px;
+}
+/*  */
+.tags-input {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  min-height: 48px;
+  width: 100%;
+  padding: 0 8px;
+  border: 1px solid rgb(214, 216, 218);
+  border-radius: 6px;
+}
+.tags-input input {
+  flex: 1;
+  border: none;
+  height: 46px;
+  font-size: 14px;
+  padding: 0px 0 0 5px; 
+}
+.tags-input input:focus {
+  outline: transparent;
+}
+
+#tags {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+.tags-input .tag {
+  width: auto;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0 8px;
+  font-size: 14px;
+  list-style: none;
+  border-radius: 6px;
+  margin: 0 8px 8px 0;
+  background: #cd1643;
+}
+.tags-input .tag .tag-close-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  font-size: 14px;
+  margin-left: 8px;
+  color: #cd1643;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 567px) {
+  .tags-input {
+      width: calc(100vw - 32px);
+  }
+}
